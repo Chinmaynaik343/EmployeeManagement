@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>New Employees</h1>
+
+    <form id="employeeForm">
+      <div class="form-group">
+        <label for="name">Enter Name</label>
+        <input type="text" id="name" placeholder="Enter name">
+      </div>
+
+      <div class="form-group">
+        <label for="profession">Enter Profession</label>
+        <input type="text" id="profession" placeholder="Enter profession">
+      </div>
+
+      <div class="form-group">
+        <label for="age">Enter Age</label>
+        <input type="number" id="age" placeholder="Enter age" min="1">
+      </div>
+
+      <button type="submit" id="addEmployee">Add Employee</button>
+    </form>
+
+    <p id="message" aria-live="polite"></p>
+
+    <section class="employees-section">
+      <h2>Added Employees</h2>
+      <p id="employeeCount">You have 0 Employees.</p>
+      <div id="employeeList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
